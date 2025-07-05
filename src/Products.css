@@ -1,0 +1,143 @@
+@font-face {
+  font-family: 'avenir_book';
+  src: url('http://localhost:3000/Fonts/avenir/Avenir-Book.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'montserrat_regular';
+  src: url('http://localhost:3000/Fonts/montserat/Montserrat-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'montserrat_medium';
+  src: url('http://localhost:3000/Fonts/montserat/Montserrat-Medium.otf') format('opentype');
+}
+
+.products {
+  margin-top: 8rem;
+ 
+}
+.products .title {
+  font-size: 45px;
+  text-align: center;
+  font-family: 'avenir_book';
+}
+.box {
+  scroll-behavior: "smooth";
+  white-space: "nowrap";
+
+  margin: 0 auto;
+  width: 90%;
+  overflow: scroll;
+  display: -webkit-box;
+  overflow-y: hidden;
+  height: 480px;
+}
+.box::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Scrollbar arkası */
+  border-radius: 10px;
+}
+.card {
+  width: 400px;
+  height: 400px;
+
+}
+.card .card-photo {
+  object-fit: cover;
+  border-radius: 25px;
+  height: 250px;
+  width: 250px;
+
+}
+.card .title {
+  text-align: left;
+  display: block;
+  font-family: 'montserrat_medium', sans-serif;
+  font-size: 15px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+ 
+}
+.card .price {
+  display: block;
+  text-align: left;
+
+  font-family: 'montserrat_regular', sans-serif;
+  font-size: 15px;
+ 
+}
+.colors {
+  display: flex;
+}
+.color {
+  cursor: pointer;
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  padding: 2px;
+  background-color: white;
+
+}
+.the {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  text-align: center;
+  
+}
+#border {
+  border: 1px solid rgb(132, 132, 132);
+}
+#color1 {
+  background-color: #E6CA97;
+
+}
+#color2 {
+  background-color: #D9D9D9;
+
+}
+#color3 {
+  background-color: #E1A4A9;
+
+}
+.color-title {
+  font-family: 'avenir_book', sans-serif;
+  font-size: 12px;
+}
+.stars {
+  width: 20px;
+  height: 20px;
+  fill: gold; /* Sarı yapar */
+}
+.bos {
+  fill: rgb(249 249 249) !important;
+}
+.yildizsayisi {
+  font-family: 'avenir_book'!important;
+  font-size: 14px!important;
+  display: inline;
+  margin-bottom: 7px;
+
+}
+.arrows {
+  fill: rgb(77, 77, 77);
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+.leftarrow {
+  position: absolute;
+  top: 40%;
+  left: 5px;
+  z-index: 6;
+}
+.rightarrow {
+  position: absolute;
+  top: 40%;
+  right: 5px;
+  z-index: 6;
+}
+@media only screen and (max-width: 768px) {
+  .arrows {
+    display: none!important;
+  }
+}
