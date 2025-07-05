@@ -25,7 +25,7 @@ function Products() {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    fetch("https://json-server-product-lists.onrender.com/products")
+    fetch("https://darkleas.github.io/product-lists/db.json")
       .then(response => response.json())
       .then(data => {
         setProducts(data);
