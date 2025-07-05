@@ -1,14 +1,14 @@
 @font-face {
   font-family: 'avenir_book';
-  src: url('http://localhost:3000/Fonts/avenir/Avenir-Book.ttf') format('truetype');
+  src: url('/public/Fonts/avenir/Avenir-Book.ttf') format('truetype');
 }
 @font-face {
   font-family: 'montserrat_regular';
-  src: url('http://localhost:3000/Fonts/montserat/Montserrat-Regular.ttf') format('truetype');
+  src: url('/public/Fonts/montserat/Montserrat-Regular.ttf') format('truetype');
 }
 @font-face {
   font-family: 'montserrat_medium';
-  src: url('http://localhost:3000/Fonts/montserat/Montserrat-Medium.otf') format('opentype');
+  src: url('/public/Fonts/montserat/Montserrat-Medium.otf') format('opentype');
 }
 
 .products {
