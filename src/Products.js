@@ -7,7 +7,7 @@ import Product from './components/Product';
 function Products() {
   const [products, setProducts] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:3000/db.json")
+    fetch("https://darkleas.github.io/product-lists/db.json")
       .then(response => response.json())
       .then(data => {
         if (Array.isArray(data)) {
