@@ -23,15 +23,15 @@ function Products() {
   };
   
   const [products, setProducts] = useState([]);
-
+  console.log("guncellendi");
   useEffect(() => {
     fetch("https://darkleas.github.io/product-lists/db.json")
       .then(response => response.json())
       .then(data => {
+        console.log("Gelen veri:", data);
         setProducts(data);
       })
   }, []);
-  console.log(products)
   return (
     <div className='products'>
       <p className='title'>Product List</p>
