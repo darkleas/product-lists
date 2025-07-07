@@ -5,6 +5,21 @@ import Product from './components/Product';
 
 
 function Products() {
+  const [products, setProducts] = useState([]);
+  useEffect(() => {
+    fetch("http://localhost:3000/db.json")
+      .then(response => response.json())
+      .then(data => {
+        if (Array.isArray(data)) {
+          setProducts(data);
+        } else if (Array.isArray(data.products)) {
+          setProducts(data.products);
+        } else {
+          setProducts([]);
+        }
+      })
+  }, []);
+  
   const toright = () => {
     const box = document.querySelector(".box");
     if (box) {
@@ -22,16 +37,6 @@ function Products() {
       });    }
   };
   
-  const [products, setProducts] = useState([]);
-  console.log("guncellendi");
-  useEffect(() => {
-    fetch("https://darkleas.github.io/product-lists/db.json")
-      .then(response => response.json())
-      .then(data => {
-        console.log("Gelen veri:", data);
-        setProducts(data);
-      })
-  }, []);
   return (
     <div className='products'>
       <p className='title'>Product List</p>
